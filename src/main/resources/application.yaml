@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: areus
+  datasource:
+    url: jdbc:h2:mem:areusdb
+    driverClassName: org.h2.Driver
+    username: areus
+    password: areuspw
+  jpa:
+    open-in-view: false
+
+logging:
+  level:
+    org.springframework: INFO
+
+areus:
+  cors:
+    - 'http://localhost:4200'
+  username: areus
+  password: areuspw

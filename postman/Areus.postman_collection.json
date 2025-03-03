@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "6b5e5b75-3844-416d-8baf-15d946673e0f",
+		"name": "Areus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14932393"
+	},
+	"item": [
+		{
+			"name": "getAllCustomers",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/getAllCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"getAllCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/getCustomer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"getCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomersAverageAge",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/getCustomersAverageAge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"getCustomersAverageAge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCustomer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Robert\",\r\n    \"lastName\": \"Jankovics\",\r\n    \"birthDate\": \"2000.06.17\",\r\n    \"phoneNumber\": \"+36205047549\",\r\n    \"email\": \"jankovicsrobert17@icloud.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/createCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"createCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCustomer/4",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Robert\",\r\n    \"lastName\": \"Jankovics\",\r\n    \"birthDate\": \"2000.06.17\",\r\n    \"phoneNumber\": \"+36205047549\",\r\n    \"email\": \"jankovicsrobert17@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/updateCustomer/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"updateCustomer",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCustomer/4",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/deleteCustomer/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"deleteCustomer",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCustomersBetween18And40",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "areuspw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "areus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/areus/customers/getAllCustomersBetween18And40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"areus",
+						"customers",
+						"getAllCustomersBetween18And40"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
